@@ -1,0 +1,262 @@
+% ------------- https://www.overleaf.com/project/65c22b10e861a0fa2df689ff ------------- %
+
+% Based (but completely redesigned) on Resume in Latex Template by Sourabh Bajaj
+\documentclass[letterpaper, 10pt]{article}
+
+% font
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{noto}
+% \usepackage[default]{raleway}
+
+\pdfgentounicode=1
+
+% packages
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{scrextend}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fontawesome}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{pagecolor}
+\usepackage{ragged2e}
+
+\usepackage[left=1cm,right=1cm,top=1.25cm,bottom=1.25cm]{geometry}
+
+% custom
+
+% command macros
+\newcommand{\iconSpace}{\hspace{2px}}
+\newcommand{\bulletSpace}{\vspace{-4pt}}
+\newcommand{\hSpace}{\hspace{8px}}
+\newcommand{\secStartSpace}{\vspace{3pt}}
+\newcommand{\secEndSpace}{\vspace{5pt}}
+\newcommand{\spaceCollapse}{\vspace{-2pt}}
+
+% use the macro for work experience header
+% arg 1 = header title
+% arg 2 = position title (subtitle (in italics)
+% arg 3 = date
+\newcommand{\workHeader}[3]{
+\noindent \large{\textbf{\textcolor{TextColor}{#1}}} \hfill \normalsize{#3}\vspace{2pt}\\
+	\textit{#2}\vspace{-2pt}
+}
+
+% use the macro for work experience subheader
+\newcommand{\workSubHeader}[2]{
+    \noindent \textit{#1} \hfill \normalsize{#2}
+	\vspace{-2pt}
+}
+
+% use the macro for project header
+\newcommand{\projectHeader}[2]{
+\noindent{\large\textbf{#1}} \hfill \normalsize#2 \vspace{2pt}
+}
+
+% line spacing
+
+% colors
+% \definecolor{black}{RGB}{14, 100, 237} % change the black color if this one is not to your liking
+
+
+\definecolor{PageColor}{HTML}{fafafa}
+\definecolor{TextColor}{HTML}{1b2333}
+\definecolor{HeaderColor}{HTML}{0b1215}
+\definecolor{black}{HTML}{0c0c0c}
+
+\pagecolor{PageColor}
+\color{TextColor}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=HeaderColor,
+    filecolor=HeaderColor,
+    urlcolor=TextColor,
+}
+
+% indent space
+\titlespacing{\section}{10pt}{10px}{2ex}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-2pt}\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% bolder
+\newcommand{\boldlarger}[1]{{\large\textbf{\color{black}{#1}}}}
+\newcommand{\justbold}[1]{{\textbf{\color{black}{#1}}}}
+% \newcommand{\boldlarger}[1]{{\textbf{\color{black}{#1}}}}
+\newcommand{\justlarge}[1]{{\large \textbf{#1}}}
+
+
+\begin{document}
+
+% ------------- header ------------- %
+\begin{center} 
+	{\Huge \textbf{MAHIRAJ SINGH BAGHELA}}\\
+	\vspace{1px}
+ \color{TextColor}
+	% "footnotes" (icon + link)
+	{
+		\color{black}
+            \faicon{linkedin} \iconSpace \href{https://www.linkedin.com/in/mahirajsb/}{mahirajsb}
+		\hfill
+		\href{mailto:mahirajsinghbaghela@gmail.com}{mahirajsinghbaghela@gmail.com}} \vspace{2pt} \iconSpace \faicon{envelope} 
+        }\\
+	{
+            \color{black}
+		\faicon{github} \iconSpace \href{https://github.com/mahiraj7}{@mahiraj7}
+            \hfill
+		\href{https://main--mahirajsb-portfolio.netlify.app/}{mahiraj.netlify.app} \iconSpace \faicon{globe} 
+		% \hSpace 
+		% \faicon{map-marker} \iconSpace
+		% Regina, SK
+	}
+\end{center}
+
+
+\begin{addmargin}[0.5em]{1em}
+	\setstretch{1.125}
+        \vspace{8pt}
+	\noindent As a dedicated and passionate \justbold{Data Science} student and aspiring \justbold{Data Analyst}, I am eager to apply my foundational skills and knowledge to real-world projects. With hands-on experience in various data analysis and machine learning projects, I am seeking an entry-level position where I can contribute to data-driven decision-making and continue to develop my expertise in the field.
+        \vspace{8pt}
+\end{addmargin}
+
+\spaceCollapse
+\spaceCollapse
+% ------------- end header ------------- %
+\section{\color{black} \textbf{Work Experience}}
+\secStartSpace
+
+\begin{addmargin}[0.5em]{1em}
+	\workHeader{IBM (CSR BOX)}{Data Science Intern}{Jun 2024 - Current}
+	\begin{itemize}
+            \item Engaged in hands-on data analysis and machine learning projects during an internship at IBM under the CSRBOX initiative, contributing to real-world applications of data science .
+                \bulletSpace
+            \item Applied Python, Pandas, NumPy, and data visualization tools like Matplotlib to analyze and interpret data sets, gaining practical experience in leveraging data-driven insights for strategic decision-making
+                
+	\end{itemize}
+		
+	\workHeader{Keycard Technologies}{Data Analyst Inten}{Jan 2024 - Jun 2024}
+	\begin{itemize}
+            \item Applied Python, Excel, and SQL to analyze large datasets, contributing to actionable business insights and process optimization.
+                \bulletSpace
+            \item Utilized data visualization tools such as Tableau to create interactive dashboards and reports, facilitating data-driven decision-making and enhancing organizational efficiency.
+	\end{itemize}
+ \end{addmargin}
+\secEndSpace
+% ------------- projects ------------- %
+\section{\color{black} \textbf{Projects}}
+\secStartSpace
+
+\begin{addmargin}[0.5em]{1em}
+
+		
+	% ------------- project 1 ------------- %
+	\projectHeader{Credit Card Customer Report}{July 2024}
+        \begin{itemize}
+            \item Developed and designed interactive PowerBI report using SQL to extract and transform, enhancing visualization and decision making processes.
+        \end{itemize}
+    \vspace{8pt}
+	% ------------- end project 1 ------------- %
+ 
+	% ------------- project 2 ------------- %
+	\projectHeader{Credit Card Fraud Detection}{June 2024}
+		
+	\noindent 
+         \begin{itemize}
+            \item Developed model using Pandas, NumPy, Matplotlib for data analysis and visualization.
+                \bulletSpace
+        \end{itemize}
+    \vspace{8pt}
+	% ------------- end project 2 ------------- %
+ 
+        % ------------- project 3 ------------- %
+	\projectHeader{HR Analytics Dashboard}{ April 2024}
+        \begin{itemize}
+            \item Developed an HR analytics dashboard in Power BI and Excel to visualize key workforce metrics to support data-driven decision-making and reporting.
+        \end{itemize}
+    \vspace{8pt}
+	% ------------- end project 3 ------------- %
+ 
+ 	 % ------------- project 4 ------------- %
+	\projectHeader{E-commerce Store Sales Analysis}{March 2024}
+        \begin{itemize}
+            \item Performed comprehensive sales analysis for an E-commerce store using Pandas, NumPy, Matplotlib and seaborn to uncover key trends, patterns and detailed visualization.
+
+        \end{itemize}
+    \vspace{8pt}
+	% ------------- end project 4 ------------- %
+
+  	% ------------- project 5 ------------- %
+	\projectHeader{Sign Language Detection}{Jan 2023- Feb 2024}
+        \begin{itemize}
+            \item Developed an ASL sign language detection system using Python, OpenCV, and MediaPipe for real-time gesture recognition.
+        \end{itemize}
+    \vspace{8pt}
+
+        \projectHeader{WRITEMIND}{Dec 2023}
+        \begin{itemize}
+            \item Developed a full-stack notes application using Ruby on Rails to streamline note-taking and organization with robust CRUD functionality.
+
+        \end{itemize}
+    \vspace{8pt}
+	% ------------- end project 4 ------------- %
+\end{addmargin}
+\secEndSpace
+\secEndSpace
+% ------------- end projects ------------- %
+
+
+% ------------- skills ------------- %
+\section{\color{black} \textbf{Skills}}
+\secStartSpace
+
+\begin{addmargin}[0.5em]{1em}
+	\setstretch{1.125}
+	\noindent \textbf{Data Analysis and Processing:} Python, NumPy, Pandas, Excel \\
+        \noindent \textbf{Data Visualization:} Tableau, Power BI, Matplotlib \\
+        \noindent \textbf{Fullstack and Development:} HTML, CSS, Javascript, Tailwind CSS, Bootstrap, Ruby on Rails \\
+        \noindent \textbf{Databases:} PostgreSQL, MySQL \\
+        \noindent \textbf{Other:} Git, Github \\
+\end{addmargin}
+\secEndSpace
+\secEndSpace
+% ------------- end skills ------------- %
+
+
+% ------------- education ------------- %
+\section{\color{black} \textbf{Education}}
+\secStartSpace
+
+\begin{addmargin}[0.5em]{1em}
+	\large\textbf{Bachelors in Data Science}\hfill \normalsize{July 2022 - May 2025}\\
+	\setlength\parindent{1cm} JRNVU, Udaipur, India
+\end{addmargin}
+\secEndSpace
+\secEndSpace
+% ------------- end education ------------- %
+
+
+% % ------------- achievements ------------- %
+% \section{\color{black} \textbf{Achievements}}
+% \secStartSpace
+
+% % for natHACKS specificially
+% \hypersetup{
+%     colorlinks=true,
+%     linkcolor=HeaderColor,
+%     filecolor=HeaderColor,
+%     urlcolor=HeaderColor,
+% }
+
+% \begin{addmargin}[0.5em]{1em}
+%     \begin{itemize}[itemsep=-2.25pt, leftmargin=1.5em]
+%         \item Joe Award \hfill Sept 2021 - Sept 2021
+%         \item Top of the Class \hfill April 2014 - April 2019
+%     \end{itemize}
+% \end{addmargin}
+% % ------------- end achievements ------------- %
+
+\end{document}
